@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Funnel Sans', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #0A3981;
+  }
+   
+  h3 {
+    color: #0A3981;
+  }
+
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #0A3981;
+
+    text-align: center;
+    font-weight: bold;
+  }
+
+  nav a {
+    font-size: 18px;
+
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s, font-weight 0.3s;
+
+    color: #0A3981;
+  }
+
+  nav a:hover {
+    font-weight: bold;
+
+  }
+
+  .profile header{
+    text-align: center;
+  }
+
+  .featured-image {
+    width: 100%;
+    max-height: 300px;
+    
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .profile img {
+    width: 200px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    padding: 20px;
+  }
+
+  .card p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+
+  .jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #1F509A;
+    text-align: center;
+    color: white;
+  }
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+
+  gap: 2rem;
+}
+
+  nav li {
+    list-style-type: none;
+  }
+
+  nav {
+    background-color: #D4EBF8;
+    padding: 5px;
+
+    position: sticky;
+    top: 0;
+  }
+
+  main {
+    padding: 20px;
+
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  #content {
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+
+  aside {
+    flex: 1;
+  }
+
+  header {
+    display: inline;
+}
+
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+
+    main aside {
+      align-self: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+
+    main aside {
+      align-self: stretch;
+    }
+  }
+
+  footer div a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer div a:hover {
+    color: #1F509A;
+}
+
+.featured-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Dropdown Styling */
+nav ul li ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 0.3s;
+}
+
+nav ul li ul li:last-child {
+  border-bottom: none;
+}
+
+nav ul li ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+nav ul li ul li:hover {
+  background-color: white;
+}
+
+nav ul li ul li:hover a {
+  color: white;
+}
+
+/* Styling Dropdown Icon */
+nav ul li .dropdown-icon {
+  font-size: 12px;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+nav ul li:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+table th {
+  text-align: left;
+  padding-right: 10px; /* Opsional, menambahkan jarak antara kolom th dan td */
+}
